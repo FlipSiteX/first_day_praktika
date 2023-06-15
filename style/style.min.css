@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'CormorantLight';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-Light.ttf);
+}
+@font-face {
+    font-family: 'CormorantLightItalic';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'CormorantItalic';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-Italic.ttf);
+}
+@font-face {
+    font-family: 'CormorantSemiBold';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'CormorantSemiBoldItalic';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: 'CormorantMediumItalic';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'CormorantMedium';
+    src: url(../fonts/Cormorant_Infant/CormorantInfant-Medium.ttf);
+}
+@font-face {
+    font-family: 'MontserratMedium';
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+html{
+    background-image: url(../img/background.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin-top: 30px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header p{
+    font-family: 'CormorantSemiBold';
+    font-size: 28px;
+    color: #756b62;
+}
+header nav{
+    font-family: "MontserratMedium";
+    font-size: 18px;
+}
+header nav a{
+    text-decoration: none;
+    color: #988f87;
+}
+header nav a:hover{
+    color: #866254;
+}
+header nav:last-child{
+    display: flex;
+    align-items: center;
+}
+header nav:last-child a:last-child svg{
+    fill: #988f87;
+}
+header nav:last-child a:last-child svg:hover{
+    fill: #866254;
+}
+header nav:first-child a:last-child{
+    margin-left: 45px;
+}
+header nav:last-child a:nth-child(2){
+    margin: 0 45px 0 45px;
+}
+
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    width: 1170px;
+    margin-top: 50px;
+}
+.welcome .left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.welcome .left p{
+    font-family: 'CormorantLight';
+    font-size: 98px;
+    color: #756b62;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+    z-index: 5;
+}
+.welcome .left img:first-child{
+    align-self: start;
+    filter: contrast(110%);
+}
+.welcome .left img:last-child{
+    align-self: end;
+    margin-right: -100px;
+    filter: contrast(110%);
+}
+.welcome .right{
+    display: flex;
+    position: relative;
+    margin: 100px 0 0 220px;
+}
+.welcome .right img:first-child{
+    filter: contrast(110%);
+}
+.welcome .right img:last-child{
+    position: absolute;
+    bottom: -65px;
+    right: -70px;
+    opacity: 60%;
+}
+
+
+.love{
+    margin: 290px 0 140px 0;
+    text-align: center;
+    font-family: 'CormorantItalic';
+    font-size: 40px;
+    color: #988f87;
+    position: relative;
+}
+.love h2{
+    font-weight: 100;
+    line-height: 52px;
+}
+.love span{
+    font-family: 'CormorantSemiBold';
+    color: #756b62;
+}
+.love img{
+    position: absolute;
+    top: -65px;
+    right: 10px;
+    z-index: -1;
+}
+
+
+.history{
+    display: flex;
+    justify-content: center;
+}
+.history .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.history .title h4{
+    font-family: 'MontserratMedium';
+    font-size: 18px;
+    color: #a79d95;
+    font-weight: 400;
+}
+.history .title hr{
+    width: 50px;
+    height: 1px;
+    background-color: #9f968e;
+    border: none;
+    margin-right: 20px;
+}
+.history h2{
+    font-family: 'CormorantMediumItalic';
+    font-size: 55px;
+    font-weight: 100;
+    color: #756b62;
+    line-height: 56px;
+}
+.history .left p{
+    font-family: 'CormorantSemiBoldItalic';
+    font-size: 24px;
+    margin-top: 30px;
+    color: #988f87;
+}
+.history .person{
+    display: flex;
+    margin-top: 40px;
+}
+.history .person .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.history .person .avatar{
+    background-image: url(../img/Group\ 166.png);
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+}
+.history .person .name a{
+    font-family: 'MontserratMedium';
+    font-weight: 18px;
+    color: #756b62;
+}
+.history .person .name h5{
+    font-family: 'MontserratMedium';
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #988f87;
+}
+.history .left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 685px;
+}
+.history .left img{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+.history .right{
+    position: relative;
+    margin-left: 30px;
+}
+.history .right img:first-child{
+    position: relative;
+    top: -30px;
+}
+.history .right img:last-child{
+    position: absolute;
+    bottom: 35px;
+    right: -135px;
+}
+
+
+.shine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 240px;
+}
+.shine h2{
+    font-family: 'CormorantMedium';
+    font-size: 150px;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    color: #bdb4ab;
+    z-index: -1;
+}
+.shine .box img{
+    z-index: -1;
+    position: relative;
+    top: 50%;
+}
+.shine .box p{
+    font-family: 'MontserratRegular';
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+}
+.shine .box button{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 58px;
+    color: white;
+    border-color: white;
+    background: transparent;
+    border-radius: 40px;
+    font-family: 'MontserratRegular';
+    font-size: 20px;
+}
